@@ -101,10 +101,22 @@ eval("/* Mapbox GL JS is licensed under the 3-Clause BSD License. Full text of l
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const mapboxgl = __webpack_require__(/*! mapbox-gl */ \"./node_modules/mapbox-gl/dist/mapbox-gl.js\");\n\nmapboxgl.accessToken = 'pk.eyJ1Ijoic2pvc2VwaDExMjM2IiwiYSI6ImNrMTZsOXptMDAxMXkzY3BhZm9kZWxmOTgifQ.34HJoREz_ili2il4iJL6bQ';\n\nconst map = new mapboxgl.Map({\n  container: \"map\",\n  center: [-74.009, 40.705], // FullStack NY coordinates; alternatively, use [-87.6354, 41.8885] for Chicago\n  zoom: 12, // starting zoom\n  style: \"mapbox://styles/mapbox/streets-v10\" // mapbox has lots of different map styles available.\n});\nconst markerDomElm = document.createElement('div');\nmarkerDomElm.style.width = '32px';\nmarkerDomElm.style.height = '39px';\nmarkerDomElm.style.backgroundImage = 'url(http://i.imgur.com/wbMOfml.png)';\nnew mapboxgl.Marker(markerDomElm).setLngLat([-74.009151, 40.705086]).addTo(map);\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _marker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./marker */ \"./src/marker.js\");\n/* harmony import */ var _marker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_marker__WEBPACK_IMPORTED_MODULE_0__);\nconst mapboxgl = __webpack_require__(/*! mapbox-gl */ \"./node_modules/mapbox-gl/dist/mapbox-gl.js\");\n\n\nmapboxgl.accessToken = 'pk.eyJ1Ijoic2pvc2VwaDExMjM2IiwiYSI6ImNrMTZsOXptMDAxMXkzY3BhZm9kZWxmOTgifQ.34HJoREz_ili2il4iJL6bQ';\n\nconst map = new mapboxgl.Map({\n  container: \"map\",\n  center: [-74.009, 40.705], // FullStack NY coordinates; alternatively, use [-87.6354, 41.8885] for Chicago\n  zoom: 12, // starting zoom\n  style: \"mapbox://styles/mapbox/streets-v10\" // mapbox has lots of different map styles available.\n});\n\n// createMarker(markers.hotelMarker, [40.714242, -74.005546]);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/marker.js":
+/*!***********************!*\
+  !*** ./src/marker.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module parse failed: Unexpected token (4:50)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n| // why did we have to store the URL in a var to have it show up on the map?\\n| export const markers = {\\n>    defaultMarker: \\\"http://i.imgur.com/WbMOfMl.png\\\";\\n|    activityMarker: \\\"http://i.imgur.com/WbMOfMl.png\\\";\\n|    hotelMarker: \\\"http://i.imgur.com/D9574Cu.png\\\";\");\n\n//# sourceURL=webpack:///./src/marker.js?");
 
 /***/ })
 

@@ -9,6 +9,12 @@ body {
 }
 
 #map{
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
+}
+
+.marker {
+  height: 10px;
+  width: 10px;
+
 }
